@@ -1,0 +1,761 @@
+
+/* ==========================================
+   GREEN TECHNOLOGY - PAGE 3
+   EGYPT'S EFFORTS AGAINST CLIMATE CHANGE
+========================================== */
+
+
+/* ==========================================
+   1. GENERAL SETTINGS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f9f5;
+    color: #183b2b;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   2. NAVIGATION BAR
+========================================== */
+
+header {
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #174d32;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #68a943;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #244735;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #70aa43;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #174d32;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   3. HERO SECTION
+========================================== */
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 65px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 45, 29, 0.95),
+            rgba(18, 75, 48, 0.72)
+        ),
+        url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.subtitle {
+    color: #78a94d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.subtitle) {
+    color: #e3eee5;
+    font-size: 17px;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   4. BUTTONS
+========================================== */
+
+.main-btn {
+    display: inline-block;
+    padding: 13px 26px;
+    background: #78b84c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #4d8e35;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   5. GENERAL SECTIONS
+========================================== */
+
+.section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.section-title h2 {
+    color: #174d32;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.section-title > p:last-child {
+    color: #65776b;
+}
+
+
+/* ==========================================
+   6. INTRODUCTION SECTION
+========================================== */
+
+.introduction {
+    background: #f5f9f5;
+}
+
+.intro-box {
+    max-width: 1050px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-left: 5px solid #78b84c;
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    box-shadow: 0 5px 20px rgba(20, 65, 40, 0.07);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h3 {
+    color: #245d3b;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.intro-text p {
+    color: #65776b;
+    margin-bottom: 12px;
+}
+
+.intro-icon {
+    font-size: 85px;
+    min-width: 100px;
+    text-align: center;
+}
+
+
+/* ==========================================
+   7. INITIATIVES SECTION
+========================================== */
+
+.initiatives {
+    background: #edf5ed;
+}
+
+.initiative-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.initiative-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(20, 65, 40, 0.06);
+    transition: 0.3s;
+}
+
+.initiative-card:hover {
+    transform: translateY(-7px);
+}
+
+.initiative-icon {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.initiative-card h3 {
+    color: #245d3b;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.initiative-card p {
+    color: #66776c;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   8. GOVERNORATES SECTION
+========================================== */
+
+.governorates {
+    background: #f5f9f5;
+}
+
+.governorate-grid {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* GOVERNORATE CARDS */
+
+.governorate-card {
+    overflow: hidden;
+    padding: 0 0 22px;
+
+    background: white;
+    border: 1px solid #e1eadf;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(20, 65, 40, 0.07);
+
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.governorate-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 25px rgba(20, 65, 40, 0.13);
+
+    border-color: #91bd77;
+}
+
+
+/* GOVERNORATE IMAGES */
+
+.governorate-card img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+    display: block;
+
+    margin-bottom: 18px;
+
+    transition: 0.4s ease;
+}
+
+.governorate-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* GOVERNORATE INFORMATION */
+
+.governorate-card .status,
+.governorate-card h3,
+.governorate-card p,
+.governorate-card small {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.governorate-card h3 {
+    color: #174d32;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.governorate-card p {
+    color: #66776c;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 105px;
+    margin-bottom: 18px;
+}
+
+.governorate-card small {
+    display: block;
+    width: auto;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #e5eee5;
+
+    color: #5c963f;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   9. PROJECT STATUS LABELS
+========================================== */
+
+.status {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #e6f3e5;
+    color: #397c3d;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* ==========================================
+   10. SEARCH BAR
+========================================== */
+
+.search-container {
+    max-width: 550px;
+    margin: 0 auto 45px;
+
+    display: flex;
+    align-items: center;
+
+    background: white;
+    border: 2px solid #dce9dc;
+    border-radius: 10px;
+
+    padding: 5px 16px;
+
+    transition: 0.3s;
+}
+
+.search-container:focus-within {
+    border-color: #78b84c;
+
+    box-shadow:
+        0 0 10px rgba(120, 184, 76, 0.15);
+}
+
+.search-container input {
+    flex: 1;
+
+    padding: 13px;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+    color: #183b2b;
+
+    background: transparent;
+}
+
+.search-container span {
+    font-size: 20px;
+}
+
+
+/* NO RESULTS MESSAGE */
+
+.no-results {
+    display: none;
+
+    text-align: center;
+
+    color: #9b4747;
+    font-weight: bold;
+
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   11. SOURCES SECTION
+========================================== */
+
+.sources {
+    background: #edf5ed;
+}
+
+.sources-list {
+    max-width: 850px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.sources-list a {
+    display: block;
+
+    padding: 18px;
+
+    background: white;
+
+    border-radius: 9px;
+    border: 1px solid #e0eadf;
+
+    color: #245d3b;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.sources-list a:hover {
+    background: #e1f0dc;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   12. CONCLUSION SECTION
+========================================== */
+
+.conclusion {
+    background: #174d32;
+    color: white;
+
+    text-align: center;
+
+    padding: 65px 20px;
+}
+
+.conclusion h2 {
+    font-size: 31px;
+    margin-bottom: 15px;
+}
+
+.conclusion p {
+    color: #d8e9dc;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   13. PAGE NAVIGATION
+========================================== */
+
+.page-navigation {
+    padding: 35px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 18px;
+
+    background: #edf5ed;
+}
+
+.navigation-btn {
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.previous {
+    color: #245d3b;
+    background: white;
+    border: 1px solid #78b84c;
+}
+
+.home {
+    color: white;
+    background: #174d32;
+}
+
+.next {
+    color: white;
+    background: #78b84c;
+}
+
+.navigation-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 5px 12px rgba(20, 65, 40, 0.15);
+}
+
+
+/* ==========================================
+   14. FOOTER
+========================================== */
+
+footer {
+    background: #103522;
+    color: #d5e4d9;
+
+    padding: 22px;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    display: inline-block;
+
+    color: #a8d77e;
+
+    text-decoration: none;
+
+    margin-top: 8px;
+}
+
+
+/* ==========================================
+   15. SCROLL ANIMATION
+========================================== */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   16. RESPONSIVE DESIGN - TABLETS
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .initiative-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .governorate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        padding-top: 20px;
+
+        gap: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+}
+
+
+/* ==========================================
+   17. RESPONSIVE DESIGN - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 380px;
+        padding: 55px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-content > p:not(.subtitle) {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+    .intro-box {
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .intro-icon {
+        font-size: 65px;
+    }
+
+    .initiative-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .governorate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .governorate-card img {
+        height: 220px;
+    }
+
+    .governorate-card p {
+        min-height: auto;
+    }
+
+    .sources-list {
+        grid-template-columns: 1fr;
+    }
+
+    .page-navigation {
+        flex-direction: column;
+    }
+
+    .navigation-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conclusion h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* ==========================================
+   18. SMALL SCREENS
+========================================== */
+
+@media (max-width: 350px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+}
